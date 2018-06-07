@@ -1,0 +1,13 @@
+package extensionObject;
+
+public class Client {
+
+	public static void main(String[] args) {
+		Animal sheep = new Sheep();
+		Role soldier = (Role) sheep.getExtension("soldier");
+		soldier.playRole();
+		Role peasant = (Role) sheep.getExtension("peasant");
+		peasant.playRole();
+	}
+
+}

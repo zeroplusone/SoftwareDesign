@@ -1,0 +1,14 @@
+package practice15_visitor;
+
+public class Waitress {
+	public static void main(String[] argv){
+		Menu menu = new DinnerMenu();
+		menu.setMenuItems(new MenuItems("food1"), new MenuItems("food2"), new MenuItems("food3"));
+		Information info = new Calories();
+		menu.printMenu(info);
+		info = new Protein();
+		menu.printMenu(info);
+		info = new Carbs();
+		menu.printMenu(info);
+	}
+}

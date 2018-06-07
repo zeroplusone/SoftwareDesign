@@ -1,0 +1,5 @@
+package test;
+
+public abstract class abc {
+	public abstract void run(){};
+}

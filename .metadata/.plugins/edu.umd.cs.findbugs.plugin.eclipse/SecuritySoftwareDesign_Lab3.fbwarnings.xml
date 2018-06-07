@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1478935237056" analysisTimestamp="1478935229481" release="">
+  <Project projectName="SecuritySoftwareDesign_Lab3">
+    <Jar>/Volumes/Transcend 1/workspace/SecuritySoftwareDesign_Lab3/bin/SQLExample.class</Jar>
+    <AuxClasspathEntry>/Volumes/Transcend 1/workspace/SecuritySoftwareDesign_Lab3/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Volumes/Transcend 1/NCKU/1051SoftwareDesign/&#23433;&#20840;&#36575;&#39636;&#35373;&#35336;/20161112&#25104;&#22823;&#36039;&#24037;/Java Lab/Java Lab 3/h2-1.4.192.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Volumes/Transcend 1/workspace/SecuritySoftwareDesign_Lab3/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DMI_EMPTY_DB_PASSWORD" priority="2" rank="7" abbrev="Dm" category="SECURITY" first="1">
+    <Class classname="SQLExample">
+      <SourceLine classname="SQLExample" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Class>
+    <Method classname="SQLExample" name="getDBConnection" signature="()Ljava/sql/Connection;" isStatic="false">
+      <SourceLine classname="SQLExample" start="19" end="21" startBytecode="0" endBytecode="9" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Method>
+    <SourceLine classname="SQLExample" start="20" end="20" startBytecode="12" endBytecode="12" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    <SourceLine classname="SQLExample" start="20" end="20" startBytecode="12" endBytecode="12" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="SQLExample">
+      <SourceLine classname="SQLExample" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Class>
+    <Method classname="SQLExample" name="addUser" signature="()V" isStatic="false">
+      <SourceLine classname="SQLExample" start="34" end="40" startBytecode="0" endBytecode="125" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="SQLExample" start="35" end="35" startBytecode="6" endBytecode="6" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="SQLExample" start="36" end="36" startBytecode="12" endBytecode="12" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="SQLExample">
+      <SourceLine classname="SQLExample" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Class>
+    <Method classname="SQLExample" name="createTable" signature="()V" isStatic="false">
+      <SourceLine classname="SQLExample" start="25" end="31" startBytecode="0" endBytecode="125" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="SQLExample" start="26" end="26" startBytecode="6" endBytecode="6" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="SQLExample" start="27" end="27" startBytecode="12" endBytecode="12" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="SQLExample">
+      <SourceLine classname="SQLExample" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Class>
+    <Method classname="SQLExample" name="isValidUser" signature="(Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="SQLExample" start="43" end="54" startBytecode="0" endBytecode="272" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="SQLExample" start="45" end="45" startBytecode="45" endBytecode="45" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="SQLExample" start="46" end="46" startBytecode="52" endBytecode="52" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="SQLExample" start="47" end="47" startBytecode="55" endBytecode="55" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="SQLExample">
+      <SourceLine classname="SQLExample" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Class>
+    <Method classname="SQLExample" name="isValidUser" signature="(Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="SQLExample" start="43" end="54" startBytecode="0" endBytecode="272" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="SQLExample" start="44" end="44" startBytecode="6" endBytecode="6" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="SQLExample" start="45" end="45" startBytecode="13" endBytecode="13" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="SQLExample" start="46" end="46" startBytecode="52" endBytecode="52" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="SQLExample" start="47" end="47" startBytecode="55" endBytecode="55" sourcefile="SQLExample.java" sourcepath="SQLExample.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" priority="1" rank="10" abbrev="SQL" category="SECURITY" first="1">
+    <Class classname="SQLExample">
+      <SourceLine classname="SQLExample" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Class>
+    <Method classname="SQLExample" name="isValidUser" signature="(Ljava/lang/String;Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="SQLExample" start="43" end="54" startBytecode="0" endBytecode="38" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    </Method>
+    <SourceLine classname="SQLExample" start="45" end="45" startBytecode="45" endBytecode="45" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+    <SourceLine classname="SQLExample" start="45" end="45" startBytecode="45" endBytecode="45" sourcefile="SQLExample.java" sourcepath="SQLExample.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 12 Nov 2016 15:19:57 +0800" total_classes="1" referenced_classes="18" total_bugs="6" total_size="49" num_packages="1" java_version="1.8.0_31" vm_version="25.31-b07" cpu_seconds="16.73" clock_seconds="7.94" peak_mbytes="705.84" alloc_mbytes="910.50" gc_seconds="0.16" priority_2="5" priority_1="1">
+    <PackageStats package="" total_bugs="6" total_types="1" total_size="49" priority_2="5" priority_1="1">
+      <ClassStats class="SQLExample" sourceFile="SQLExample.java" interface="false" size="49" bugs="6" priority_2="5" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="777" invocations="2" avgMicrosecondsPerInvocation="388986" maxMicrosecondsPerInvocation="415149" standardDeviationMircosecondsPerInvocation="26156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="406" invocations="363" avgMicrosecondsPerInvocation="1119" maxMicrosecondsPerInvocation="27759" standardDeviationMircosecondsPerInvocation="3048"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="142" invocations="69" avgMicrosecondsPerInvocation="2059" maxMicrosecondsPerInvocation="16916" standardDeviationMircosecondsPerInvocation="2878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="123" invocations="18" avgMicrosecondsPerInvocation="6850" maxMicrosecondsPerInvocation="39804" standardDeviationMircosecondsPerInvocation="10259"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="113" invocations="363" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="10515" standardDeviationMircosecondsPerInvocation="713"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="91" invocations="36" avgMicrosecondsPerInvocation="2541" maxMicrosecondsPerInvocation="36646" standardDeviationMircosecondsPerInvocation="8063"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="88" invocations="18" avgMicrosecondsPerInvocation="4904" maxMicrosecondsPerInvocation="26560" standardDeviationMircosecondsPerInvocation="7120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="87" invocations="6" avgMicrosecondsPerInvocation="14580" maxMicrosecondsPerInvocation="84608" standardDeviationMircosecondsPerInvocation="31318"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="67" invocations="18" avgMicrosecondsPerInvocation="3725" maxMicrosecondsPerInvocation="43646" standardDeviationMircosecondsPerInvocation="9858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="59" invocations="18" avgMicrosecondsPerInvocation="3327" maxMicrosecondsPerInvocation="31892" standardDeviationMircosecondsPerInvocation="7651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="55" invocations="18" avgMicrosecondsPerInvocation="3097" maxMicrosecondsPerInvocation="17388" standardDeviationMircosecondsPerInvocation="4811"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="52" invocations="6" avgMicrosecondsPerInvocation="8770" maxMicrosecondsPerInvocation="43770" standardDeviationMircosecondsPerInvocation="15676"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1478935237016" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

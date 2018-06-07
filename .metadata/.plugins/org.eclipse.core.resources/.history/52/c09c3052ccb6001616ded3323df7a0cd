@@ -1,0 +1,11 @@
+package practice15_visitor;
+
+public class Menu {
+	String name;
+	public void printMenu(Information info){
+		
+	}
+	public void setMenu(Menu...menus ){
+		
+	}
+}

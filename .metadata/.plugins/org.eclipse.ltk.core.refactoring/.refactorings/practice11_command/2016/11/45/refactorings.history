@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;practice11_command.document&apos; to &apos;Document&apos;&#x0A;- Original project: &apos;practice11_command&apos;&#x0A;- Original element: &apos;practice11_command.document&apos;&#x0A;- Renamed element: &apos;practice11_command.Document&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;document&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;practice11_command{document.java[document" matchStrategy="1" name="Document" qualified="false" references="true" similarDeclarations="false" stamp="1478075962334" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,8 @@
+package test;
+
+public abstract class abc {
+	public abc(){
+		System.out.println("hi");
+	}
+	public abstract void run();
+}

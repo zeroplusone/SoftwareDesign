@@ -1,0 +1,5 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>First Version</message>\n<message>Add QueryPage framework&\#x0A;</message>\n<message>Add function of add points</message>\n<message>Add delete fuction in editPage</message>\n<message>Add dynamic combobox in editPage</message>\n<message>Add display of custom query table</message>\n<message>Connect Combo list and insert button between UI and DB</message>\n<message>Add EditPage basic function</message>\n<message>Add SQLPage basic function</message>\n<message>Add UI of SQLPage.java</message>\n</messages>
+eclipse.preferences.version=1
+org.eclipse.egit.ui.githistorypage.showallfilter=SHOWALLRESOURCE
+resourcehistory_graph_split=743,256
+resourcehistory_rev_split=700,300

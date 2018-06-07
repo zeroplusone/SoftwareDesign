@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+history=push origin master\u0000status\u0000commit -m "Create basic architecture"\u0000push -u origin master\u0000remote -u origin master\u0000remote add origin git@github.com\:zeroplusone/SoftwareDesign-homework2.git\u0000remote -v\u0000remote\u0000commit -m "Add class diagram(.ucls) and Composition class."\u0000commit\u0000add src/sd_hw2/Composition.java\u0000add src/SD_hw2_UML.ucls\u0000diff\u0000help\u0000ls\u0000init\u0000use

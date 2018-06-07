@@ -1,0 +1,5 @@
+package practice16_singleton;
+
+public class Single {
+
+}

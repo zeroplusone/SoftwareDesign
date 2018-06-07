@@ -1,0 +1,11 @@
+package practice15_visitor;
+
+public class Carbs implements Information{
+
+	@Override
+	public void printInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package practice16_singleton;
+
+public class Single {
+	private static Single myself=null;
+	public static int num=0;
+	public Single(){
+		num++;
+	}
+	public static Single getInstance(){
+		if(myself==null){
+			myself = new Single();
+		}
+		return myself;
+	}
+	public void run(){
+		System.out.println("us");
+	}
+}

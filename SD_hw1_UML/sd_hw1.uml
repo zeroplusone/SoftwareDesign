@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_d5_EAIqYEeaOPNMSRKRf2g" name="NewModel">
+  <packageImport xmi:id="_x3MZUIqYEeaOPNMSRKRf2g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rJM3UIqYEeaOPNMSRKRf2g" name="Person">
+    <packageImport xmi:id="_bjmmAIqZEeaOPNMSRKRf2g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <ownedAttribute xmi:id="_9Q74wIqYEeaOPNMSRKRf2g" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3IYsIqZEeaOPNMSRKRf2g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ra9gQIqZEeaOPNMSRKRf2g" name="address" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xufT0IqZEeaOPNMSRKRf2g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4MJ60IqZEeaOPNMSRKRf2g" name="socialSecureNumber" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_IGkJEIqaEeaOPNMSRKRf2g" name="earnSalary"/>
+    <ownedOperation xmi:id="_OKsOsIqaEeaOPNMSRKRf2g" name="chargeTime">
+      <ownedParameter xmi:id="_hlYI8IqeEeaOPNMSRKRf2g" name="project" type="_lHSbYIqcEeaOPNMSRKRf2g"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_D57UEIqbEeaOPNMSRKRf2g" name="Company">
+    <packageImport xmi:id="_D57UEYqbEeaOPNMSRKRf2g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <ownedAttribute xmi:id="_D57UEoqbEeaOPNMSRKRf2g" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D57UE4qbEeaOPNMSRKRf2g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_D57UFIqbEeaOPNMSRKRf2g" name="address" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D57UFYqbEeaOPNMSRKRf2g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_D57UFoqbEeaOPNMSRKRf2g" name="socialSecureNumber" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_D57UF4qbEeaOPNMSRKRf2g" name="hirePerson">
+      <ownedParameter xmi:id="_RLzG4IqoEeaOPNMSRKRf2g" name="person" type="_rJM3UIqYEeaOPNMSRKRf2g"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_D57UGIqbEeaOPNMSRKRf2g" name="firePeople">
+      <ownedParameter xmi:id="_Wok4oIqoEeaOPNMSRKRf2g" name="person" type="_rJM3UIqYEeaOPNMSRKRf2g"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_U6LJAIqbEeaOPNMSRKRf2g" name="." memberEnd="_U6LJAYqbEeaOPNMSRKRf2g _U6OMUYqbEeaOPNMSRKRf2g" navigableOwnedEnd="_U6OMUYqbEeaOPNMSRKRf2g">
+    <ownedEnd xmi:id="_U6LJAYqbEeaOPNMSRKRf2g" name="employer" type="_D57UEIqbEeaOPNMSRKRf2g" association="_U6LJAIqbEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U6NlQIqbEeaOPNMSRKRf2g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U6OMUIqbEeaOPNMSRKRf2g" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_U6OMUYqbEeaOPNMSRKRf2g" name="employee" type="_rJM3UIqYEeaOPNMSRKRf2g" association="_U6LJAIqbEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U6OzYIqbEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U6OzYYqbEeaOPNMSRKRf2g" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4C0twIqbEeaOPNMSRKRf2g" name="Worker">
+    <generalization xmi:id="_DnHQUIqcEeaOPNMSRKRf2g" general="_rJM3UIqYEeaOPNMSRKRf2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4sIJcIqbEeaOPNMSRKRf2g" name="Manager">
+    <generalization xmi:id="_P-KFgIqcEeaOPNMSRKRf2g" general="_rJM3UIqYEeaOPNMSRKRf2g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lHSbYIqcEeaOPNMSRKRf2g" name="Project">
+    <ownedAttribute xmi:id="_r6Fk4IqcEeaOPNMSRKRf2g" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r6GL8IqcEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r6GL8YqcEeaOPNMSRKRf2g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wRSOoIqcEeaOPNMSRKRf2g" name="budge" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wRSOoYqcEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wRSOooqcEeaOPNMSRKRf2g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0oCMcIqcEeaOPNMSRKRf2g" name="internalPriority" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0oCMcYqcEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0oCMcoqcEeaOPNMSRKRf2g" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7P_-8IqcEeaOPNMSRKRf2g" name="." memberEnd="_7P_-8YqcEeaOPNMSRKRf2g _7QAmAoqcEeaOPNMSRKRf2g" navigableOwnedEnd="_7P_-8YqcEeaOPNMSRKRf2g _7QAmAoqcEeaOPNMSRKRf2g">
+    <ownedEnd xmi:id="_7P_-8YqcEeaOPNMSRKRf2g" name="workers" type="_4C0twIqbEeaOPNMSRKRf2g" association="_7P_-8IqcEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7QAmAIqcEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7QAmAYqcEeaOPNMSRKRf2g" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_7QAmAoqcEeaOPNMSRKRf2g" name="projects" type="_lHSbYIqcEeaOPNMSRKRf2g" association="_7P_-8IqcEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7QBNEIqcEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7QBNEYqcEeaOPNMSRKRf2g" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_77SXoIqcEeaOPNMSRKRf2g" name="." memberEnd="_77S-sIqcEeaOPNMSRKRf2g _77TlwYqcEeaOPNMSRKRf2g" navigableOwnedEnd="_77S-sIqcEeaOPNMSRKRf2g _77TlwYqcEeaOPNMSRKRf2g">
+    <ownedEnd xmi:id="_77S-sIqcEeaOPNMSRKRf2g" name="managers" type="_4sIJcIqbEeaOPNMSRKRf2g" association="_77SXoIqcEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_77S-sYqcEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_77TlwIqcEeaOPNMSRKRf2g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_77TlwYqcEeaOPNMSRKRf2g" name="projects" type="_lHSbYIqcEeaOPNMSRKRf2g" association="_77SXoIqcEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_77TlwoqcEeaOPNMSRKRf2g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_77Tlw4qcEeaOPNMSRKRf2g" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_El6lcIqdEeaOPNMSRKRf2g" name="use-a" client="_rJM3UIqYEeaOPNMSRKRf2g" supplier="_lHSbYIqcEeaOPNMSRKRf2g"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_K_-e0IqdEeaOPNMSRKRf2g" name="Department">
+    <ownedAttribute xmi:id="_fl3kwIqdEeaOPNMSRKRf2g" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Lg_hMIqdEeaOPNMSRKRf2g" name="Product">
+    <ownedAttribute xmi:id="_jvpdkIqdEeaOPNMSRKRf2g" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_m1udsIqdEeaOPNMSRKRf2g" name="cost" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rQO6IIqdEeaOPNMSRKRf2g" name="weight" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xXqLYIqdEeaOPNMSRKRf2g" name="." memberEnd="_xXqLYYqdEeaOPNMSRKRf2g _xXqycoqdEeaOPNMSRKRf2g" navigableOwnedEnd="_xXqycoqdEeaOPNMSRKRf2g">
+    <ownedEnd xmi:id="_xXqLYYqdEeaOPNMSRKRf2g" name="companys" type="_D57UEIqbEeaOPNMSRKRf2g" aggregation="composite" association="_xXqLYIqdEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xXqycIqdEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xXqycYqdEeaOPNMSRKRf2g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xXqycoqdEeaOPNMSRKRf2g" name="departments" type="_K_-e0IqdEeaOPNMSRKRf2g" association="_xXqLYIqdEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xXqyc4qdEeaOPNMSRKRf2g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xXrZgIqdEeaOPNMSRKRf2g" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9xfO0IqdEeaOPNMSRKRf2g" name="manage" memberEnd="_9xf14IqdEeaOPNMSRKRf2g _9xhEAYqdEeaOPNMSRKRf2g" navigableOwnedEnd="_9xf14IqdEeaOPNMSRKRf2g _9xhEAYqdEeaOPNMSRKRf2g">
+    <ownedEnd xmi:id="_9xf14IqdEeaOPNMSRKRf2g" name="departments" type="_K_-e0IqdEeaOPNMSRKRf2g" association="_9xfO0IqdEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xgc8IqdEeaOPNMSRKRf2g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xhEAIqdEeaOPNMSRKRf2g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_9xhEAYqdEeaOPNMSRKRf2g" name="managers" type="_4sIJcIqbEeaOPNMSRKRf2g" association="_9xfO0IqdEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xhEAoqdEeaOPNMSRKRf2g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xhEA4qdEeaOPNMSRKRf2g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_G9mioIqqEeaOPNMSRKRf2g" name="primary product" memberEnd="_G9mioYqqEeaOPNMSRKRf2g _G9nwwoqqEeaOPNMSRKRf2g" navigableOwnedEnd="_G9nwwoqqEeaOPNMSRKRf2g">
+    <ownedEnd xmi:id="_G9mioYqqEeaOPNMSRKRf2g" name="companys" type="_D57UEIqbEeaOPNMSRKRf2g" association="_G9mioIqqEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G9nwwIqqEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G9nwwYqqEeaOPNMSRKRf2g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_G9nwwoqqEeaOPNMSRKRf2g" name="products" type="_Lg_hMIqdEeaOPNMSRKRf2g" association="_G9mioIqqEeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G9oX0IqqEeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G9oX0YqqEeaOPNMSRKRf2g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eiCGMIq-EeaOPNMSRKRf2g" name="." memberEnd="_eiFwkIq-EeaOPNMSRKRf2g _eiLQIIq-EeaOPNMSRKRf2g" navigableOwnedEnd="_eiLQIIq-EeaOPNMSRKRf2g">
+    <ownedEnd xmi:id="_eiFwkIq-EeaOPNMSRKRf2g" name="departments" type="_K_-e0IqdEeaOPNMSRKRf2g" aggregation="shared" association="_eiCGMIq-EeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eiKCAIq-EeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eiKpEIq-EeaOPNMSRKRf2g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_eiLQIIq-EeaOPNMSRKRf2g" name="products" type="_Lg_hMIqdEeaOPNMSRKRf2g" association="_eiCGMIq-EeaOPNMSRKRf2g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eiL3MIq-EeaOPNMSRKRf2g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eiL3MYq-EeaOPNMSRKRf2g" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

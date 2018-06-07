@@ -1,0 +1,5 @@
+package practice15_visitor;
+
+public class Calories implements Information{
+
+}

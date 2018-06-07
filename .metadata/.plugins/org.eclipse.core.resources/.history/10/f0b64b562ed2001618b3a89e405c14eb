@@ -1,0 +1,5 @@
+package extensionObject;
+
+public abstract class Animal {
+	public abstract Extension getExtension(String name);
+}
